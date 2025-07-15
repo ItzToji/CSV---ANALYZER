@@ -1,36 +1,42 @@
-# 📊 CSV Data Analyzer (Beginner Python Project)
+# 📊 CSV Analyzer
 
-This is a beginner-friendly Python project that helps you load, view, search, and analyze data from a CSV file. The script is simple, well-commented, and ideal for practicing Python skills like file handling, loops, conditionals, and basic data analysis.
-
----
-
-## ✅ Features
-
-- 🔍 **Load CSV File**  
-  Reads data from a `.csv` file and stores it as a list of dictionaries.
-
-- 📄 **Preview Data**  
-  Displays the first 5 rows of the dataset for a quick overview.
-
-- 🔢 **Data Summary**  
-  Shows the total number of rows in the dataset.
-
-- 🧠 **Search Function**  
-  Lets you search for rows based on a specific column and value.
-
-- 📈 **Generate Statistics**  
-  - Calculates total quantity sold  
-  - Calculates average price  
-  - Counts unique products  
+A Python program to **load**, **explore**, **search**, and **summarize** CSV data files.  
+This project helps beginners practice **core Python skills** and provides a useful utility for inspecting and reporting on tabular data.
 
 ---
 
-## 📁 Sample Data Format
+## 🚀 Features
 
-Make sure your CSV file looks like this (save it as `sample_data.csv`):
+✅ **Load CSV Data**  
+- Dynamically load any CSV file with headers.  
+- Automatically detects column names.
 
-```csv
-Date,Product,Quantity,Price
-2024-01-01,Apple,10,2.5
-2024-01-02,Banana,5,1.0
-2024-01-03,Apple,2,2.5
+✅ **Preview Data**  
+- Display the first few rows for quick inspection.
+
+✅ **Search Records**  
+- Find rows matching a specific column value.
+
+✅ **Generate Statistics**  
+- Compute and display:
+  - Total quantity sold
+  - Average price
+  - Number of unique products
+  - Count of rows skipped due to invalid data
+- Save a **summary report** to `summary_report.txt`.
+
+✅ **Menu-Driven Interface**  
+- Easy interactive navigation.
+
+✅ **Robust Error Handling**  
+- Graceful handling of:
+  - Missing files
+  - Empty files
+  - Invalid numeric values
+
+---
+
+## 🛠 Requirements
+
+- Python 3.x  
+- No third-party libraries required (only `csv` and `os` from the standard li
